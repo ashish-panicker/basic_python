@@ -10,3 +10,13 @@ If the array contains the numbers: [1, 2, 3, 5, 6]
 Then the missing number is 4.
 
 """
+def find_missing_number_sum(arr, n):
+    expected_sum = n * (n + 1) // 2
+    actual_sum = sum(arr)
+    return expected_sum - actual_sum
+
+example:
+arr = [1, 2, 3, 4, 5, 6, 8]
+n = 8
+print(find_missing_number_sum(arr, n))  
+ Output: 7
